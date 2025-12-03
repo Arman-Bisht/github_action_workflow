@@ -1,117 +1,105 @@
-# Welcome to PearlThoughts Internship Program
+# Strapi Local Setup - DevOps Intern Task
 
-We are thrilled to welcome you to the PearlThoughts team! This internship is designed to provide you with valuable hands-on experience, deepen your understanding of technology, and help you hone your skills in a collaborative, innovative environment.
+## � CreateSd By
 
-# Policies and Guidelines
+**Name**: Arman Bisht  
+**Role**: DevOps Intern  
+**Date**: December 3, 2025
 
-## Training and Attendance
+---
 
-### Training Sessions
-- **Schedule**: Every weekday at 10:30 AM 
-- **Attendance**: MANDATORY - Missing sessions affects your evaluation
-- **Duration**: Full attention required during training hours
+## ✅ Task Completed
 
-### Working Hours
-- **Availability**: 10 AM to 6 PM on all working days
-- **Active Participation**: Required in all team activities and discussions
+1. ✓ Cloned official Strapi repository
+2. ✓ Installed dependencies using yarn
+3. ✓ Built the project successfully
+4. ✓ Started development server
+5. ✓ Created sample content entry
+6. ✓ Uploaded cover image to Media Library
+7. ✓ Documented setup process
 
-## Daily Requirements
+---
 
-### 📝 Pull Requests (PR)
-- **Deadline**: Must be raised by end of each day
-- **Content**: Include all work completed during the day
-- **Consequence**: No PR = Marked absent for that day
+## 🚀 Setup Steps
 
-### 📋 Status Updates
-- Post daily progress in your team channel
-- Use the [[../Templates/Daily-Status-Template|Daily Status Template]]
-- Be specific about completed tasks and blockers
+### 1. Clone Repository
 
-## Task Management
+```bash
+git clone https://github.com/strapi/strapi.git
+cd strapi
+```
 
-### Assigned Tasks
-- Tasks assigned during morning training sessions
-- **Timely Completion**: Critical for your evaluation
-- Document challenges and solutions
+### 2. Install Dependencies
 
-### Task Tracking
-- Update task status regularly
-- Communicate blockers immediately
-- Seek help when needed
+```bash
+yarn install
+```
 
-## Evaluation Process
+### 3. Build Project
 
-### Weekly Evaluations
-- **When**: Every Friday
-- **Criteria**:
-  - Task completion and quality
-  - Collaboration and teamwork
-  - Learning progress
-  - Professional conduct
+```bash
+yarn setup
+```
 
-### Performance Metrics
-- Code quality and best practices
-- Meeting deadlines
-- Communication effectiveness
-- Problem-solving approach
+### 4. Run Development Server
 
-## Communication Channels
+```bash
+npm run develop
+```
 
-### MS Teams Channels
+Access admin panel at: `http://localhost:1337/admin`
 
-| Channel | Purpose |
-|---------|------|
-| **Internship** | Key updates and announcements |
-| **Support** | Cloud resources and technical guidance |
-| **DevOps** | Deployment assistance and DevOps queries |
-| **Team [Name]** | Your team's collaboration space |
+---
 
-### Email Communication
-- **Support Queries**: hr@pearlthoughts.com
-- **Topics**: LOA requests, Teams access, evaluation results
-- **Important**: Avoid raising these in training sessions or Teams channels
+## 📝 Sample Content Created
 
-## Termination Policy
+### Content Entry Details
 
-### ⚠️ Automatic Termination Triggers
-- Missing 3 consecutive training sessions
-- Failing to submit PR for 3 consecutive days
-- No prior notice will be given
+**Title**: Strapi Local Setup and PR Preparation
 
-## Professional Conduct
+**Content**: Cloned the official Strapi repository, installed Node dependencies using yarn, created my new feature branch (e.g., feature/ArmanBisht), successfully started the development server, and created this sample content entry to verify functionality.
 
-### Expected Behavior
-1. **Professionalism**: Maintain professional demeanor in all interactions
-2. **Respect**: Treat all team members with respect
-3. **Punctuality**: Be on time for all meetings and deadlines
-4. **Integrity**: Be honest about your progress and challenges
-5. **Collaboration**: Actively help and learn from peers
+**Team Member Component**:
 
-## Support Resources
+- **Name**: Arman
+- **Role**: DevOps Intern
+- **Bio**: Completed the initial task of setting up the local Strapi development environment and verifying the Content Manager functionality by creating a sample content entry.
 
-### Getting Help
-- Technical issues: Post in Support channel
-- DevOps help: Use DevOps channel
-- Administrative queries: Email hr@pearlthoughts.com
-- Task clarification: Ask your mentor during training
+**Cover Image**: Uploaded to Media Library (Strapi Local Setup image)
 
-## Best Practices
+---
 
-### Code Quality
-- Follow project coding standards
-- Write clean, documented code
-- Test your changes before PR
-- Review peers' code constructively
+## 📁 Project Structure
 
-### Documentation
-- Document your learning journey
-- Share helpful resources with team
-- Maintain clear commit messages
-- Update project documentation
+```
+strapi/
+├── packages/          # Core Strapi packages
+│   ├── core/         # Admin panel & core server
+│   └── plugins/      # Official plugins
+├── examples/         # Example applications
+│   └── getstarted/   # Development instance
+├── tests/            # Test suites
+└── docs/             # Documentation
+```
 
-## Your Journey Starts Here
+---
 
-We are excited to have you on board and look forward to seeing you grow and succeed during your time with us. 
+## 🔧 Key Features Verified
 
-**Welcome to PearlThoughts—let's embark on this journey together!**
-# The-Config-Crew
+- ✓ Content Manager functionality
+- ✓ Media Library (image upload)
+- ✓ Content Type Builder
+- ✓ Admin Panel access
+- ✓ Development server running
+
+---
+
+## 📚 Resources
+
+- [Strapi Documentation](https://docs.strapi.io)
+- [GitHub Repository](https://github.com/strapi/strapi)
+
+---
+
+**Strapi Version**: v5.x  
+**Node Version**: v20.14.0
