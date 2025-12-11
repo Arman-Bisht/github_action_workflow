@@ -63,7 +63,7 @@ sleep 15
 
 # Pull Strapi image from ECR (public access)
 echo "Pulling Strapi Docker image from ECR..."
-docker pull 301782007642.dkr.ecr.ap-south-1.amazonaws.com/strapi-app:latest
+docker pull 891377350540.dkr.ecr.ap-south-1.amazonaws.com/strapi-app:latest
 
 # Run Strapi container with PostgreSQL connection
 echo "Starting Strapi container with PostgreSQL..."
@@ -84,7 +84,7 @@ docker run -d \
   -e ADMIN_JWT_SECRET=tobemodified \
   -e TRANSFER_TOKEN_SALT=tobemodified \
   -e JWT_SECRET=tobemodified \
-  301782007642.dkr.ecr.ap-south-1.amazonaws.com/strapi-app:latest
+  891377350540.dkr.ecr.ap-south-1.amazonaws.com/strapi-app:latest
 
 echo "Strapi deployment completed!"
 echo "PostgreSQL running in Docker container"
