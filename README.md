@@ -1,117 +1,138 @@
-# Welcome to PearlThoughts Internship Program
+# Strapi Local Setup - DevOps Intern Task
 
-We are thrilled to welcome you to the PearlThoughts team! This internship is designed to provide you with valuable hands-on experience, deepen your understanding of technology, and help you hone your skills in a collaborative, innovative environment.
+## � CreateSd By
 
-# Policies and Guidelines
+**Name**: Arman Bisht  
+**Role**: DevOps Intern  
+**Date**: December 3, 2025
 
-## Training and Attendance
+---
 
-### Training Sessions
-- **Schedule**: Every weekday at 10:30 AM 
-- **Attendance**: MANDATORY - Missing sessions affects your evaluation
-- **Duration**: Full attention required during training hours
+## ✅ Tasks Completed
 
-### Working Hours
-- **Availability**: 10 AM to 6 PM on all working days
-- **Active Participation**: Required in all team activities and discussions
+### Task 1: Strapi Local Setup
+- ✓ Cloned official Strapi repository
+- ✓ Installed dependencies and built project
+- ✓ Started development server
+- ✓ Created sample content and uploaded media
 
-## Daily Requirements
+### Task 2: Docker Setup
+- ✓ Created Dockerfile for Strapi application
+- ✓ Built and tested Docker image locally
+- ✓ Documented Docker setup process
+- ✓ See: `TASK2_DOCKER_SUMMARY.md`
 
-### 📝 Pull Requests (PR)
-- **Deadline**: Must be raised by end of each day
-- **Content**: Include all work completed during the day
-- **Consequence**: No PR = Marked absent for that day
+### Task 3: Docker Compose Multi-Container Setup
+- ✓ Created docker-compose.yml with PostgreSQL
+- ✓ Configured Nginx reverse proxy
+- ✓ Set up networking between containers
+- ✓ Documented in `strapi/examples/getstarted/`
 
-### 📋 Status Updates
-- Post daily progress in your team channel
-- Use the [[../Templates/Daily-Status-Template|Daily Status Template]]
-- Be specific about completed tasks and blockers
+### Task 4: Docker Deep Dive Documentation
+- ✓ Explained Docker vs VMs
+- ✓ Documented Docker architecture
+- ✓ Covered Dockerfile, networking, volumes
+- ✓ See: `strapi/examples/getstarted/Task_4_docker.md`
 
-## Task Management
+### Task 5: AWS EC2 Deployment with Terraform
+- ✓ Automated infrastructure with Terraform
+- ✓ Deployed Strapi on EC2 using Docker
+- ✓ Configured VPC, Security Groups, and networking
+- ✓ See: `strapi/examples/getstarted/TASK5_README.md`
 
-### Assigned Tasks
-- Tasks assigned during morning training sessions
-- **Timely Completion**: Critical for your evaluation
-- Document challenges and solutions
+---
 
-### Task Tracking
-- Update task status regularly
-- Communicate blockers immediately
-- Seek help when needed
+## 🚀 Setup Steps
 
-## Evaluation Process
+### 1. Clone Repository
 
-### Weekly Evaluations
-- **When**: Every Friday
-- **Criteria**:
-  - Task completion and quality
-  - Collaboration and teamwork
-  - Learning progress
-  - Professional conduct
+```bash
+git clone https://github.com/strapi/strapi.git
+cd strapi
+```
 
-### Performance Metrics
-- Code quality and best practices
-- Meeting deadlines
-- Communication effectiveness
-- Problem-solving approach
+### 2. Install Dependencies
 
-## Communication Channels
+```bash
+yarn install
+```
 
-### MS Teams Channels
+### 3. Build Project
 
-| Channel | Purpose |
-|---------|------|
-| **Internship** | Key updates and announcements |
-| **Support** | Cloud resources and technical guidance |
-| **DevOps** | Deployment assistance and DevOps queries |
-| **Team [Name]** | Your team's collaboration space |
+```bash
+yarn setup
+```
 
-### Email Communication
-- **Support Queries**: hr@pearlthoughts.com
-- **Topics**: LOA requests, Teams access, evaluation results
-- **Important**: Avoid raising these in training sessions or Teams channels
+### 4. Run Development Server
 
-## Termination Policy
+```bash
+npm run develop
+```
 
-### ⚠️ Automatic Termination Triggers
-- Missing 3 consecutive training sessions
-- Failing to submit PR for 3 consecutive days
-- No prior notice will be given
+Access admin panel at: `http://localhost:1337/admin`
 
-## Professional Conduct
+---
 
-### Expected Behavior
-1. **Professionalism**: Maintain professional demeanor in all interactions
-2. **Respect**: Treat all team members with respect
-3. **Punctuality**: Be on time for all meetings and deadlines
-4. **Integrity**: Be honest about your progress and challenges
-5. **Collaboration**: Actively help and learn from peers
+## 📝 Sample Content Created
 
-## Support Resources
+### Content Entry Details
 
-### Getting Help
-- Technical issues: Post in Support channel
-- DevOps help: Use DevOps channel
-- Administrative queries: Email hr@pearlthoughts.com
-- Task clarification: Ask your mentor during training
+**Title**: Strapi Local Setup and PR Preparation
 
-## Best Practices
+**Content**: Cloned the official Strapi repository, installed Node dependencies using yarn, created my new feature branch (e.g., feature/ArmanBisht), successfully started the development server, and created this sample content entry to verify functionality.
 
-### Code Quality
-- Follow project coding standards
-- Write clean, documented code
-- Test your changes before PR
-- Review peers' code constructively
+**Team Member Component**:
 
-### Documentation
-- Document your learning journey
-- Share helpful resources with team
-- Maintain clear commit messages
-- Update project documentation
+- **Name**: Arman
+- **Role**: DevOps Intern
+- **Bio**: Completed the initial task of setting up the local Strapi development environment and verifying the Content Manager functionality by creating a sample content entry.
 
-## Your Journey Starts Here
+**Cover Image**: Uploaded to Media Library (Strapi Local Setup image)
 
-We are excited to have you on board and look forward to seeing you grow and succeed during your time with us. 
+---
 
-**Welcome to PearlThoughts—let's embark on this journey together!**
-# The-Config-Crew
+## 📁 Project Structure
+
+```
+Script-Smiths/
+├── README.md                           # This file
+├── TASK2_DOCKER_SUMMARY.md            # Task 2 documentation
+└── strapi/
+    └── examples/
+        └── getstarted/
+            ├── Dockerfile                  # Docker image definition
+            ├── docker-compose.yml          # Multi-container setup
+            ├── nginx.conf                  # Nginx configuration
+            ├── Task_4_docker.md           # Docker deep dive
+            ├── TASK5_README.md            # EC2 deployment guide
+            └── terraform/                  # Infrastructure as code
+                ├── main.tf
+                ├── variables.tf
+                ├── outputs.tf
+                └── user_data.sh
+```
+
+---
+
+## 🔧 Technologies Used
+
+- **Strapi**: Headless CMS
+- **Docker**: Containerization
+- **Docker Compose**: Multi-container orchestration
+- **PostgreSQL**: Database
+- **Nginx**: Reverse proxy
+- **Terraform**: Infrastructure as Code
+- **AWS EC2**: Cloud deployment
+- **Amazon Linux 2023**: Operating system
+
+---
+
+## 📚 Resources
+
+- [Strapi Documentation](https://docs.strapi.io)
+- [GitHub Repository](https://github.com/strapi/strapi)
+
+---
+
+**Strapi Version**: v5.x  
+**Node Version**: v20.14.0
