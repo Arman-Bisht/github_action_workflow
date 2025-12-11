@@ -4,11 +4,15 @@ FROM node:20-alpine
 # Install dependencies
 RUN apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git
 
-# Create a new Strapi project
-RUN npx create-strapi-app@latest /opt/app --quickstart --no-run
+# Create a new Strapi project with debug output
+RUN npx create-strapi-app@latest /opt/app --quickstart --no-run || \
+    (echo "Create failed, checking directory..." && ls -la /opt && exit 1)
 
 # Set working directory
 WORKDIR /opt/app
+
+# Verify files exist
+RUN ls -la && cat package.json
 
 # Build admin panel
 ENV NODE_ENV=production
