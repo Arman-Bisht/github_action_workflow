@@ -12,6 +12,11 @@ on:
           - plan
           - apply
           - destroy
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/terraform.yml'
 
 env:
   AWS_REGION: ap-south-1
